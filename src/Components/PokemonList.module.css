@@ -1,0 +1,8 @@
+.contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: rgba(147, 255, 201, 0.458);
+  text-align: center;
+  align-items: center;
+}
