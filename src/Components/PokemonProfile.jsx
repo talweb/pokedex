@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Favorites from "../pages/Favorites";
 import Modal from "./Modal";
 import classes from "./PokemonProfile.module.css";
 
-const PokemonProfile = ({ id, image, name, type, abilities }) => {
+const PokemonProfile = ({ id, image, name, type, abilities, pokemon }) => {
   const [isShow, setIsShow] = useState(false);
 
   const HandlerShow = () => {
@@ -12,7 +13,7 @@ const PokemonProfile = ({ id, image, name, type, abilities }) => {
       setIsShow(false);
     }
   };
-
+  <Favorites pokemon={pokemon} />;
   return (
     <div className={classes.container}>
       <div className={classes.row}>
@@ -28,6 +29,7 @@ const PokemonProfile = ({ id, image, name, type, abilities }) => {
           {isShow ? (
             <Modal
               name={name}
+              pokemon={pokemon}
               setIsShow={setIsShow}
               type={type}
               img={image}

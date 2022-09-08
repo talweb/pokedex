@@ -40,6 +40,19 @@
     letter-spacing: 0px;
   }
 }
+.btn {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(150, 187, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  transition-delay: 0.5ms;
+}
+.btn:hover {
+  background-color: rgb(68, 68, 255);
+  transform: scale(1.1);
+}
 
 .water {
   background-color: rgb(53, 204, 255);

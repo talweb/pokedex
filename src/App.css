@@ -1,8 +1,19 @@
 .app {
   background: rgba(255, 127, 127, 0.458);
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
+.nav {
+  justify-content: end;
+}
 .logo {
-  width: 30%;
+  width: 40%;
+}
+div a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: rgb(108, 32, 12);
+  font-size: 25px;
 }

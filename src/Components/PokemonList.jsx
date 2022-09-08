@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import PokemonProfile from "./PokemonProfile";
 import classes from "./PokemonList.module.css";
 const PokemonsList = ({ NamePokemons }) => {
@@ -20,6 +21,7 @@ const PokemonsList = ({ NamePokemons }) => {
     <div className={classes.contain}>
       {pokemons.map((pokemon, index) => (
         <PokemonProfile
+          pokemon={pokemon}
           id={pokemon.id}
           name={pokemon.name}
           image={pokemon.sprites.other.dream_world.front_default}
